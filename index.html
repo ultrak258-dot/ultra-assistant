@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ULTRA Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left Panel -->
+    <div class="panel left">
+      <h2>SYSTEM STATUS</h2>
+      <p>CPU Utilization: <span id="cpu">25%</span></p>
+      <p>Memory: <span id="ram">6.3 / 16 GB</span></p>
+      <p>Storage: <span id="disk">220 / 512 GB</span></p>
+      <p>Core Temp: <span id="temp">65°C</span></p>
+      <p>Battery: <span id="battery">--%</span></p>
+      <p>Environment: <span id="weather">18°C</span></p>
+    </div>
+
+    <!-- Center Core -->
+    <div class="core">
+      <div class="pulse"></div>
+      <h1>ULTRA</h1>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="panel right">
+      <h2>TEMPORAL SYNC</h2>
+      <p id="time">--:--:--</p>
+      <p id="date">-- -- ----</p>
+      <h2>NETWORK</h2>
+      <p>IP Address: <span id="ip">Loading...</span></p>
+      <p>Speed: <span>~42 Mbps</span></p>
+      <p>Connection: <span>WiFi (90%)</span></p>
+      <h2>VISUAL INPUT</h2>
+      <video id="cam" autoplay playsinline width="220"></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
