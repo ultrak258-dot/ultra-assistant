@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  font-family: 'Segoe UI', sans-serif;
+  color: #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.panel {
+  width: 22%;
+  padding: 15px;
+  background-color: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffff33;
+  border-radius: 10px;
+}
+
+.panel h2 {
+  color: #0ff;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.panel p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.core {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pulse {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00ffff 20%, transparent 70%);
+  animation: pulse 2s infinite ease-in-out;
+  position: absolute;
+}
+
+.core h1 {
+  font-size: 32px;
+  z-index: 10;
+  color: #0ff;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.5; }
+}
